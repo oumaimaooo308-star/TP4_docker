@@ -9,7 +9,7 @@ services:
       DB_USER: root
       DB_PASSWORD: root
       DB_NAME: flaskdb
-    depends-on:
+    depends_on:
       - db
 
   fontend:
@@ -17,7 +17,7 @@ services:
     image: oumeyma111/frontend-app:latest
     ports:
       - "3000:80"
-    depends-on:
+    depends_on:
       - backend
 
   db:
